@@ -1,5 +1,7 @@
 package com.txx.springboot.futuqz.controller;
 
+import com.txx.springboot.futuqz.service.PullStockService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -10,6 +12,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/pullStock")
 public class PullStockController {
+
+
+    @Autowired
+    private PullStockService pullStockService;
+
+
+
+
 
 
 
