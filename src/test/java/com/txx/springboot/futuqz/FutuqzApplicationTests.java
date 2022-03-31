@@ -1,0 +1,16 @@
+package com.txx.springboot.futuqz;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class FutuqzApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+
+
+
+}
