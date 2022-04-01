@@ -27,7 +27,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 这是一个15分钟K线策略，涨幅大于5就纳入策略中，监控所有创业板中股票。
  *
  */
-@Component
+//@Component
 public class KLine15Job implements CommandLineRunner, FTSPI_Qot, FTSPI_Conn {
 
     @Autowired
@@ -127,7 +127,7 @@ public class KLine15Job implements CommandLineRunner, FTSPI_Qot, FTSPI_Conn {
                     String code = security.getCode ();
 
                     PullStock pullStock = new PullStock ();
-                    pullStock.setPullDateTime (new Date ());
+                    pullStock.setPullDatetime (new Date ());
                     pullStock.setStockCode (code);
                     pullStock.setName (STOCK_CODE_NAME.get (code));
                     pullStockService.save (pullStock);

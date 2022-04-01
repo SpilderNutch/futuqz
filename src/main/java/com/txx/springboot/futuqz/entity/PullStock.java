@@ -10,7 +10,7 @@ public class PullStock {
 
     @TableId
     private Integer id;
-    private Date pullDateTime;
+    private Date pullDatetime;
     private String stockCode;
     private String name;
     private String category;
